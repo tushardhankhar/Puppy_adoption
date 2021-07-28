@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Did a puppy get adopted?</h1>
+
+<p>Enter Id of puppy</p>
+
+<form method="POST">
+    {{ dl.hidden_tag() }}
+    {{ dl.id.label }}{{ dl.id }}
+    {{ dl.submit() }}
+</form>
+
+{% endblock %}

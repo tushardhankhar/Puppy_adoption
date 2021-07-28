@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Here is the list of puppies</h1>
+
+  <ul>
+      {% for i in puppy %}
+
+         <li>{{ i }}</li>
+
+      {% endfor %}
+  </ul>
+
+{% endblock %}
